@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir ~/bin
+mkdir -p ~/bin
 touch ~/bin/parlaklık
 chmod +x ~/bin/parlaklık
 echo '
