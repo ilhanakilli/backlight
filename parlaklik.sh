@@ -4,7 +4,7 @@ touch ~/bin/parlaklık
 chmod +x ~/bin/parlaklık
 touch /etc/udev/rules.d/80-backlight.rules
 echo '
-SUBSYSTEM==”backlight” RUN+=”/bin/chmod 0666 /sys/class/backlight/rpi_backlight/brightness /sys/class/backlight/rpi_backlight/bl_power”'
+SUBSYSTEM==”backlight” RUN+=”/bin/chmod 0666 /sys/class/backlight/rpi_backlight/brightness /sys/class/backlight/rpi_backlight/bl_power”' > /etc/udev/rules.d/80-backlight.rules
 echo '
 #!/bin/bash
 level=$1
